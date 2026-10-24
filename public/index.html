@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ZYVORA — Everything. Elevated.</title><meta name="description" content="Shop mobiles, computers, audio, fashion, home, grocery and more on ZYVORA. Made in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><a class="sk" href="#catalog">Skip to products</a><div class="pv" id="pv" hidden>Preview mode: browsing and cart work here. Real payments need the server version with Razorpay keys.</div>
+<header><div class="w bar"><a class="logo" href="#top" aria-label="ZYVORA home"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00A8FF"/><stop offset="1" stop-color="#FF2D95"/></linearGradient></defs><path d="M6 8h28v6L16 28h18v6H6v-6l18-14H6z" fill="url(#g)"/></svg><span><b>ZYVORA</b><small>Everything. Elevated.</small></span></a>
+<form class="srch" role="search" id="sf"><input id="q" type="search" placeholder="Search products, SKU or category" aria-label="Search products" autocomplete="off"></form>
+<button class="ib" id="wb" aria-pressed="false" aria-label="Saved items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg><span>Saved</span><i id="wn"></i></button>
+<button class="ib" id="cb" aria-label="Open cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.2 12H6.2zM9 7a3 3 0 0 1 6 0"/></svg><span>Cart</span><i id="cn"></i></button></div>
+<div class="w"><nav class="chips" id="chips" aria-label="Categories"></nav></div></header>
+<main id="top"><section class="hero"><div class="w"><h1>Everything. Elevated.</h1><p>Phones, laptops, audio, fashion, home and daily essentials from one Indian marketplace.</p><a class="btn" href="#catalog">Shop now</a></div></section>
+<div class="w" id="shelves"></div>
+<section class="sec w" id="catalog"><div class="tb"><h2 id="ct" style="margin:0">All products</h2><div style="display:flex;gap:16px;flex-wrap:wrap"><label><input type="checkbox" id="is"> In stock only</label><label>Sort <select id="so"><option value="f">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="az">Name: A to Z</option></select></label></div></div>
+<p id="cnt" class="stk" role="status" style="color:var(--mu)"></p><div class="grid" id="grid"><p class="empty">Loading products…</p></div></section>
+<div class="w"><div class="tr"><div><b>Secure payments</b><small>Cards, UPI and netbanking via Razorpay</small></div><div><b>Delivery</b><small>Free above ₹2,999, otherwise ₹99</small></div><div><b>Made in India</b><small>Built for Indian shoppers</small></div></div></div></main>
+<footer><div class="w"><div><b>ZYVORA</b><br>Everything. Elevated.<br>Demo catalogue: products and prices are sample data.</div><nav aria-label="Footer"><a href="#top">Home</a><a href="#catalog">Shop</a></nav><div>Policy pages and support contact are added by the store owner before launch.</div></div></footer>
+<dialog id="dg" aria-labelledby="dt"><button class="x" id="dx" aria-label="Close">✕</button><div id="dc"></div></dialog>
+<div class="tst" id="ts" role="status"></div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script><script src="app.js"></script></body></html>
